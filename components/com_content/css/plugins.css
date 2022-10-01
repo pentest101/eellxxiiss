@@ -1,0 +1,38 @@
+body.innerpage { background-color:#ecf0f5 !important; }
+.elx5_plug_head { margin:0 0 5px 0; padding:6px 10px; background:#F0F0F0; border:1px solid #CCCCCC; font:13px/16px tahoma, arial, sans-serif; color:#272727; }
+.elx5_plug_syntax { margin:0 0 20px 0; padding:0; background:#F0F0F0; border:1px solid #CCCCCC; box-sizing: border-box; }
+.elx5_plug_label { 
+	margin:0; padding:4px 10px; background:#555555; font:13px/16px tahoma, arial, sans-serif; color:#FFFFFF; 
+	width: 160px; float:left; box-sizing: border-box;
+}
+.elx5_plug_code { 
+	margin:0 0 0 160px; padding:4px 10px; font:normal 13px/16px Courier, 'Courier New', monospace; 
+	color:#666666; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; box-sizing: border-box;
+}
+.elx5_plug_code:after  { content:''; display:table; clear:both; }
+
+table.plug_table {
+	margin:10px 0; padding:0; width: 100%; border-collapse: separate; max-width: none; border: 1px solid #F0F0F0; 
+	background-color: transparent; border-collapse: collapse; border-spacing: 0; box-sizing: border-box;
+}
+table.plug_table tr { margin:0; padding:0; background:none; }
+table.plug_table td {
+	margin:0; padding: 5px; font:normal 14px/18px "Roboto", Helvetica, Arial, sans-serif; color:#333333;
+	text-align: left; vertical-align: top; border: 1px solid #F0F0F0; box-sizing: border-box;
+}
+button.plug_button, button[type=submit].plug_button, button[type=button].plug_button {
+	display: inline-block; width:auto; background:#1C90F3; height:auto; border: 1px solid #0C81E4; border-radius: 3px; box-shadow:none; 
+	white-space: nowrap; box-sizing: border-box; cursor: pointer; font: normal 14px/18px "Roboto", Helvetica, Arial, sans-serif; color: #FFFFFF; 
+	margin:0; outline: none; padding: 3px 8px; text-align: center; text-shadow: none; text-transform: none;
+}
+button.plug_button:hover, button[type=submit].plug_button:hover, button[type=button].plug_button:hover {
+	background:#0E699E; border:1px solid #045889; color: #FFFFFF; 
+}
+table.plug_table td.plug_td80 { width:80px; }
+table.plug_table td.plug_td150 { width:150px; }
+table.plug_table td.plug_td200 { width:200px; }
+
+@media only screen and (max-width:480px) {
+	.elx5_plug_label { width: 100%; float:none; }
+	.elx5_plug_code { margin:0; }
+}

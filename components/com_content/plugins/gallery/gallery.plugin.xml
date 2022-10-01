@@ -1,0 +1,93 @@
+<package type="plugin">
+	<name>gallery</name>
+	<title>Image gallery</title>
+	<created>2020-12-17 20:46:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2021 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>3.1</version>
+	<description><![CDATA[Displays Image Galleries inside articles with optional captions.]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+		<package type="component" version="2.x">content</package>
+	</dependencies>
+	<params>
+		<param type="list" name="ordering" default="0" label="ORDERING" description="">
+			<option value="0">NO_ORDERING</option>
+			<option value="1">BY_NAME</option>
+			<option value="2">NEWER_FIRST</option>
+			<option value="3">OLDER_FIRST</option>
+		</param>
+		<param type="radio" name="autocaptions" default="1" label="AUTO_CAPTIONS" description="AUTO_CAPTIONS_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="itemstatus" name="columns" default="3" label="COLUMNS" description="">
+			<option value="3" color="blue">3</option>
+			<option value="4" color="purple">4</option>
+		</param>
+	</params>
+	<params group="THUMBNAILS">
+		<param type="radio" name="thumbnails" default="0" label="THUMBNAILS" description="THUMBNAILS_TIP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="thumbwidth" default="240" label="WIDTH" description="THUMB_WIDTH_TIP">
+			<option value="60">60</option>
+			<option value="70">70</option>
+			<option value="80">80</option>
+			<option value="90">90</option>
+			<option value="100">100</option>
+			<option value="120">120</option>
+			<option value="140">140</option>
+			<option value="160">160</option>
+			<option value="180">180</option>
+			<option value="200">200</option>
+			<option value="220">220</option>
+			<option value="240">240</option>
+			<option value="260">260</option>
+			<option value="280">280</option>
+			<option value="300">300</option>
+			<option value="320">320</option>
+			<option value="340">340</option>
+			<option value="360">360</option>
+			<option value="380">380</option>
+			<option value="400">400</option>
+			<option value="450">450</option>
+			<option value="500">500</option>
+		</param>
+		<param type="list" name="thumbheight" default="0" label="HEIGHT" description="THUMB_HEIGHT_TIP">
+			<option value="0">AUTOMATIC</option>
+			<option value="60">60</option>
+			<option value="70">70</option>
+			<option value="80">80</option>
+			<option value="90">90</option>
+			<option value="100">100</option>
+			<option value="120">120</option>
+			<option value="140">140</option>
+			<option value="160">160</option>
+			<option value="180">180</option>
+			<option value="200">200</option>
+			<option value="220">220</option>
+			<option value="240">240</option>
+			<option value="260">260</option>
+			<option value="280">280</option>
+			<option value="300">300</option>
+			<option value="320">320</option>
+			<option value="340">340</option>
+			<option value="360">360</option>
+			<option value="380">380</option>
+			<option value="400">400</option>
+			<option value="450">450</option>
+			<option value="500">500</option>
+		</param>
+		<param type="itemstatus" name="thumbmanip" default="0" label="THUMB_MANIPUL" description="THUMB_MANIPUL_TIP">
+			<option value="0" color="blue">DISTORTION</option>
+			<option value="1" color="purple">CROP</option>
+		</param>
+	</params>
+</package>

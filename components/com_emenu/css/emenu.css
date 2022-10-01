@@ -1,0 +1,38 @@
+.emenu5_typebox {
+	margin:0 0 15px 0; padding:12px; background: #FFFFFF; border-radius: 3px;
+	font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #272727;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); box-sizing: border-box;
+}
+.emenu5_typebox:last-child { margin-bottom:0; }
+.emenu5_typebox:hover { background-color:#F7F7D9; }
+.emenu5_typebox h4 { margin:0 0 3px 0; padding:0; font:bold 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #272727; }
+.emenu5_typebox h4 a, .emenu5_typebox h4 a:hover, .emenu5_typebox h4 a:visited, .emenu5_typebox h4 a:active {
+	margin:0; padding:0; display:block; font:bold 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #1866B7;
+	text-decoration:none; border:none; outline:none;
+}
+.emenu5_typebox h4 a:hover { color:#000000; }
+.emenu5_generatorwrap { margin:0 0 20px 0; padding:0; min-height:400px; }
+
+h3.emenu5_gtitle {
+	margin: 0 0 5px 0; padding: 0; border:none; background:none; font:bold 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #272727;
+}
+ul.emenu5_gblock { margin: 0 0 20px 0; padding: 0; text-indent: 0; list-style: none; display:block; }
+ul.emenu5_gblock li {
+	margin: 0 0 7px 0; padding: 0; text-indent: 0; list-style: none; display:block;
+	font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #272727;
+}
+ul.emenu5_gblock li.emenu5_glevel0 { padding: 0 0 0 15px; }
+ul.emenu5_gblock li.emenu5_glevel1 { padding: 0 0 0 15px; }
+ul.emenu5_gblock li.emenu5_glevel2 { padding: 0 0 0 30px; }
+ul.emenu5_gblock li.emenu5_glevel3 { padding: 0 0 0 45px; }
+ul.emenu5_gblock li.emenu5_glevel4 { padding: 0 0 0 60px; }
+ul.emenu5_gblock li a, ul.emenu5_gblock li a:hover, ul.emenu5_gblock li a:visited, ul.emenu5_gblock li a:active {
+	margin: 0; padding:3px 10px; display:block; font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #272727; border:none; text-decoration: none;
+	background:#F2F2F2; border-radius:3px;
+}
+ul.emenu5_gblock li a:hover { color:#FFFFFF; background:#1C90F3; }
+a.emenu5_catarts, a.emenu5_catarts:link, a.emenu5_catarts:active, a.emenu5_catarts:visited, a.emenu5_catarts:hover {
+	margin:0 0 15px 0; padding: 0; display:block; font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #555; border:none; text-decoration: none;
+}
+a.emenu5_catarts:hover { color: #3E72BF; }
+a.emenu5_catarts img { vertical-align: top; }

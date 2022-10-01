@@ -1,0 +1,59 @@
+<package type="engine">
+	<name>content</name>
+	<title>Content</title>
+	<created>2021-09-07 16:38:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2021 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.1</version>
+	<description><![CDATA[Extends elxis search to content items]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+		<package type="component" version="2.x">search</package>
+		<package type="component" version="2.x">content</package>
+	</dependencies>
+	<params>
+		<param type="range" name="limit" first="5" last="50" step="1" default="10" label="LIMIT" description="ITEMS_PER_PAGE" />
+		<param type="list" name="ordering" default="r" label="ORDERING" dir="rtl" description="DEFAULT_ORDERING">
+			<option value="r">RELEVANCY</option>
+			<option value="hd">MOST_POPULAR_FIRST</option>
+			<option value="ta">TITLE_ASC</option>
+			<option value="td">TITLE_DSC</option>
+			<option value="dd">NEWER_FIRST</option>
+			<option value="da">OLDER_FIRST</option>
+		</param>
+		<param type="itemstatus" name="columns" default="1" label="COLUMNS" description="NUMBER_COLUMNS_DESC">
+			<option value="1" color="blue">1</option>
+			<option value="2" color="blue">2</option>
+		</param>
+		<param type="radio" name="subcategories" default="0" label="SUBCATEGORIES" description="SEARCH_SUBCATS">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="showauthor" default="1" label="SHOW_AUTHOR" description="SHOW_AUTHOR_RESULTS">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="showhits" default="1" label="SHOW_HITS" description="SHOW_HITS_RESULTS">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="highlight" default="0" label="Highlight" description="If yes, given keywords will be highlighted in linked article">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="itemstatus" name="showimages" default="1" label="SHOW_IMAGES" description="">
+			<option value="0" color="red">NO</option>
+			<option value="1" color="green">YES</option>
+			<option value="2" color="lightgreen">ONLY_IFIMAGE_EXIST</option>
+		</param>
+		<param type="itemstatus" name="textposition" default="0" label="RESULTS_TEXT_POSITION" description="">
+			<option value="0" color="blue">TOP</option>
+			<option value="1" color="blue">BOTTOM</option>
+		</param>
+	</params>
+</package>

@@ -1,0 +1,43 @@
+/**
+Package: Elxis CMS
+Subpackage: Component cPanel
+Date: 2020-12-12
+Author: Ioannis Sannos / Elxis Team
+https://www.elxis.org
+*/
+.elxcp_graphbox { display: block; margin: 0; padding: 0; height: 280px; box-sizing: border-box; width: 100%; max-width: 99%; }
+canvas.elxcp_graph { margin:0; padding:0; display:block; }
+a.elxcp_check, a.elxcp_check:visited, a.elxcp_check:active, a.elxcp_check:hover { 
+	display:block; margin:0; padding:0; text-decoration:none; background:none; border:none; box-sizing: border-box;
+	font:normal 14px/20px "Roboto", Helvetica, Arial, sans-serif; color:#3483DB;
+}
+a.elxcp_check:hover { color:#000000; }
+a.elxcp_check:before { content:'\2699'; display:inline-block; margin:0 0 0 5px; font:inherit; }
+.elxcp_dashboard { margin:0 0 20px 0; padding:0; display:flex; flex-wrap: wrap; /* align-items: stretch; justify-content: space-between; */ }
+a.elxcp_dashb_item, a.elxcp_dashb_item:visited, a.elxcp_dashb_item:hover {
+	display:block; margin:0 0 5px 5px; padding:8px 6px; flex:1 1 90px; border: 1px solid #DDD; border-radius: 5px;
+	font:normal 12px/17px Tahoma, Arial, sans-serif; color: #555555; background:#FAFAFA; text-align: center; text-decoration: none;
+}
+a.elxcp_dashb_item:hover { background:#000000; border-color:#000000; color: #FFFFFF; }
+.elxcp_dashb_icon { position:relative; }
+.elxcp_dashb_icon_mark {
+	position:absolute; margin:0; padding:1px 0; top: 5px; right:10px; width:20px; height:20px; background:#FF6600; text-align:center; 
+	font:bold 14px/18px "Roboto", Arial, sans-serif; color: #FFFFFF; text-align: center; border-radius: 50%;
+}
+.elxcp_dashb_icon, .elxcp_dashb_icon i { margin:0 0 2px 0; text-align: center; font-size: 32px; line-height:32px; color:#555555; }
+a.elxcp_dashb_item:hover .elxcp_dashb_icon, a.elxcp_dashb_item:hover .elxcp_dashb_icon i { color: #FFFFFF; }
+.elxcp_dashb_text { margin:0; padding:0; text-align:center; font:inherit; }
+.elxcp_panel_wrapper { margin:0 0 30px 0; padding:0; box-sizing: border-box; }
+.elxcp_mainpanel { margin:0; padding:0; width:60%; float:right; display:block; box-sizing: border-box; }
+.elxcp_sidepanel { margin:0 61% 0 0; padding:0; width:auto; box-sizing: border-box; }
+.elxcp_sidepanel:after { display:table; content:''; clear:both; }
+textarea.elxcp_editorarea, .CodeMirror { height:612px; }
+
+@media only screen and (max-width:980px) {
+	.elxcp_mainpanel { float:none; margin:0 0 30px 0; width:100%; }
+	.elxcp_sidepanel { margin:0; width:100%; }
+	textarea.elxcp_editorarea, .CodeMirror { height:408px; }
+}
+@media only screen and (max-width:650px) {
+	textarea.elxcp_editorarea, .CodeMirror { height:306px; }
+}

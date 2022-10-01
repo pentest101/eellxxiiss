@@ -1,0 +1,150 @@
+<package type="component">
+	<name>com_user</name>
+	<title>User</title>
+	<created>2020-12-16 18:59:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2021 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[Component User]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+	</dependencies>
+	<params group="REGISTRATION" collapsed="1">
+		<param type="radio" name="reg_phone" default="0" label="TELEPHONE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_mobile" default="0" label="MOBILE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_address" default="0" label="ADDRESS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_postalcode" default="0" label="POSTAL_CODE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_city" default="0" label="CITY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_country" default="0" label="COUNTRY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="reg_terms" default="0" label="TERMS_CONDITIONS" description="DISPLAY_TERMS_CONDITIONS">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="comment" name="reg_comment" default="TERMS_CONDITIONS_HELP" label="" description="" />
+		<param type="language" name="reg_termslang1" default="" label="LANGUAGE" labelsfx=" 1" public="1" description="" />
+		<param type="file" name="reg_termstext1" default="" label="FILE" labelsfx=" 1" path="components/com_user/inc/terms/{multisite/}" filetype="txt" maxsize="0" description="" />
+		<param type="language" name="reg_termslang2" default="" label="LANGUAGE" labelsfx=" 2" public="1" description="" />
+		<param type="file" name="reg_termstext2" default="" label="FILE" labelsfx=" 2" path="components/com_user/inc/terms/{multisite/}" filetype="txt" maxsize="0" description="" />
+		<param type="language" name="reg_termslang3" default="" label="LANGUAGE" labelsfx=" 3" public="1" description="" />
+		<param type="file" name="reg_termstext3" default="" label="FILE" labelsfx=" 3" path="components/com_user/inc/terms/{multisite/}" filetype="txt" maxsize="0" description="" />
+		<param type="language" name="reg_termslang4" default="" label="LANGUAGE" labelsfx=" 4" public="1" description="" />
+		<param type="file" name="reg_termstext4" default="" label="FILE" labelsfx=" 4" path="components/com_user/inc/terms/{multisite/}" filetype="txt" maxsize="0" description="" />
+		<param type="language" name="reg_termslang5" default="" label="LANGUAGE" labelsfx=" 5" public="1" description="" />
+		<param type="file" name="reg_termstext5" default="" label="FILE" labelsfx=" 5" path="components/com_user/inc/terms/{multisite/}" filetype="txt" maxsize="0" description="" />
+	</params>
+	<params group="MEMBERSLIST" collapsed="1">
+		<param type="itemstatus" name="nav_links" default="1" label="NAVIGATION_LINKS" dir="rtl" description="">
+			<option value="0" color="green">TOP</option>
+			<option value="1" color="green">BOTTOM</option>
+			<option value="2" color="green">TOP_BOTTOM</option>
+		</param>
+		<param type="itemstatus" name="members_ordering" default="1" label="ORDERING" dir="rtl" description="">
+			<option value="0" color="red">HIDE</option>
+			<option value="1" color="green">TOP</option>
+			<option value="2" color="lightgreen">BOTTOM</option>
+		</param>
+		<param type="comment" name="members_com" default="SELFDISPMEMBLI" label="" description="" />
+		<param type="radio" name="members_groupname" default="0" label="GROUP" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_preflang" default="1" label="LANGUAGE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_address" default="0" label="ADDRESS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_pcode" default="0" label="POSTAL_CODE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_city" default="0" label="CITY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_country" default="1" label="COUNTRY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_phone" default="0" label="TELEPHONE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_mobile" default="0" label="MOBILE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_email" default="0" label="EMAIL" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_website" default="1" label="WEBSITE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_gender" default="0" label="GENDER" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_registerdate" default="1" label="REGDATE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_lastvisitdate" default="1" label="LASTVISIT" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_profile_views" default="0" label="PROFILE_VIEWS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="PROFILE" collapsed="1">
+		<param type="radio" name="gravatar" default="0" label="Gravatar" description="Will display, for users not having an avatar image, an avatar from gravatar.com">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="number" name="profile_comments" min="0" max="99" step="1" default="5" label="COMMENTS" description="Number of latest user comments. Set 0 to disable showing comments" />	
+		<param type="radio" name="profile_twitter" default="1" label="Twitter" description="Allow users to display their Twitter statuses in their profile page?">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="comment" name="twitterapi_com" default="" label="" description=""><![CDATA[To use Twitter you must <strong>create an API</strong>, if you dont already have one, 
+		at <a href="https://apps.twitter.com/" target="_blank">apps.twitter.com</a>. Then copy-paste here the API <strong>Consumer Key</strong> and <strong>Secret</strong>. 
+		The API does not need to have write access.]]></param>
+		<param type="text" name="twitterkey" default="" maxlength="180" dir="ltr" label="Twitter Consumer Key" description="" />
+		<param type="text" name="twittersecret" default="" maxlength="180" dir="ltr" label="Twitter Consumer Secret" description="" />
+	</params>
+	<params group="PERSONAL_MESSAGES" collapsed="1">
+		<param type="itemstatus" name="usersendpms" default="2" label="SEND_MESSAGE" dir="rtl" description="Select to whom a typical user is allowed to send personal messages.">
+			<option value="0" color="red">NONE</option>
+			<option value="1" color="lightgreen">ADMINISTRATOR</option>
+			<option value="2" color="green">ALL</option>
+		</param>
+	</params>
+</package>

@@ -1,0 +1,20 @@
+<package type="module" section="backend">
+	<name>mod_adminusers</name>
+	<title>Online users</title>
+	<created>2022-05-08 10:23:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2022 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[This administration module displays a list of visitors currently browsing the site. 
+	Via this module administrators can also <strong>Ban</strong> visitors from site and <strong>Logout</strong> users!]]></description>
+	<dependencies>
+		<dependency type="core" version="5.x">elxis</dependency>
+		<dependency type="component" version="2.x">cpanel</dependency>
+	</dependencies>
+	<params></params>
+</package>

@@ -1,0 +1,19 @@
+<package type="module" section="backend">
+	<name>mod_adminstats</name>
+	<title>Site statistics</title>
+	<created>2019-01-13 18:38:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2019 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[This administration module displays a graph of monthly site statistics. 
+	The collection of traffic statistics must be enabled in Elxis configuration.]]></description>
+	<dependencies>
+		<dependency type="core" version="5.x">elxis</dependency>
+	</dependencies>
+	<params></params>
+</package>

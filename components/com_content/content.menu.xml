@@ -1,0 +1,69 @@
+<elxismenu component="content">
+	<frontend>
+		<menu name="generator">
+			<title lang="en">Content special</title>
+			<title lang="el">Ειδικό περιεχόμενο</title>
+			<title lang="it">Speciale contenuti</title>
+			<title lang="de">Inhalt spezial</title>
+			<title lang="fr">Contenu spéciale</title>
+			<title lang="es">Especial contenido</title>
+			<title lang="ru">Содержимое особенным</title>
+			<items>
+				<item type="link" link="content:feeds.html" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Feeds central</title>
+					<title lang="el">Κέντρο RSS</title>
+					<title lang="it">RSS centrale</title>
+					<title lang="de">RSS zentral</title>
+					<title lang="fr">RSS central</title>
+					<title lang="es">RSS central</title>
+					<title lang="ru">RSS центральным</title>
+				</item>
+				<item type="link" link="content:tags.html?tag=elxis" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Articles tagged as elxis</title>
+					<title lang="el">Άρθρα με ετικέτα elxis</title>
+					<title lang="it">Articoli taggati come elxis</title>
+					<title lang="de">Artikel als elxis markiert</title>
+					<title lang="fr">Articles étiquetés comme elxis</title>
+					<title lang="es">Artículos etiquetados como elxis</title>
+					<title lang="ru">Статьи с тегами, как elxis</title>
+				</item>
+				<item type="link" link="content:archive/" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Archive</title>
+					<title lang="el">Αρχείο</title>
+					<title lang="it">Αrchivio</title>
+					<title lang="de">Archiv</title>
+					<title lang="fr">Archives</title>
+					<title lang="es">Archivo</title>
+					<title lang="ru">Архив</title>
+				</item>
+				<item type="link" link="content:archive/2015/" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Archive 2015</title>
+					<title lang="el">Αρχείο 2015</title>
+					<title lang="it">Αrchivio 2015</title>
+					<title lang="de">Archiv 2015</title>
+					<title lang="fr">Archives 2015</title>
+					<title lang="es">Archivo 2015</title>
+					<title lang="ru">Архив 2015</title>
+				</item>
+				<item type="link" link="content:archive/2015/03/" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Archive March 2015</title>
+					<title lang="el">Αρχείο Μάρτιος 2015</title>
+					<title lang="it">Αrchivio Marzo 2015</title>
+					<title lang="de">Archiv März 2015</title>
+					<title lang="fr">Archives Mars 2015</title>
+					<title lang="es">Archivo Marzo 2015</title>
+					<title lang="ru">Архив Март 2015</title>
+				</item>
+				<item type="link" link="content:archive/2015/03/01/" file="" popup="0" minlevel="0" secure="0" target="_self">
+					<title lang="en">Archive 01 March 2015</title>
+					<title lang="el">Αρχείο 01 Μαρτίου 2015</title>
+					<title lang="it">Αrchivio 01 Marzo 2015</title>
+					<title lang="de">Archiv 01 März 2015</title>
+					<title lang="fr">Archives 01 Mars 2015</title>
+					<title lang="es">Archivo 01 Marzo 2015</title>
+					<title lang="ru">Архив 01 Март 2015</title>
+				</item>
+			</items>
+		</menu>
+	</frontend>
+</elxismenu>

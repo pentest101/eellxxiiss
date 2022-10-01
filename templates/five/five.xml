@@ -1,0 +1,141 @@
+<package type="template" section="frontend">
+	<name>five</name>
+	<title>Five</title>
+	<created>2019-08-22 17:45:00</created>
+	<author>Ioannis Sannos</author>
+	<authoremail>info@isopensource.com</authoremail>
+	<authorurl>https://www.isopensource.com</authorurl>
+	<copyright>(C) 2008-2019 Is Open Source</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Template Five for Elxis 5.x by Is Open Source. Designed by Ioannis Sannos.]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+	</dependencies>
+	<params group="GENERAL" groupid="1001">
+		<param type="itemstatus" name="tplwidth" default="0" label="WIDTH" description="">
+			<option value="0" color="lightblue">1200 pixel</option>
+			<option value="1" color="blue">1300 pixel</option>
+			<option value="2" color="cyan">1400 pixel</option>
+			<option value="3" color="purple">1500 pixel</option>
+			<option value="4" color="lightgreen">1600 pixel</option>
+			<option value="5" color="green">100%</option>
+		</param>
+	</params>
+	<params group="TEMPLATE_TOP" groupid="1002">
+		<param type="text" name="title" default="" label="TITLE" description="TPL5_TITLE_HELP" />
+		<param type="text" name="slogan" default="" multilingual="1" label="TPL5_SLOGAN" description="TPL5_SLOGAN_HELP" />
+		<param type="folderlist" name="search" directory="components/com_search/engines/" default="content" noselect="none" dir="ltr" label="SEARCH_ENGINE" description="TPL5_SEARCH_HELP" />
+		<param type="text" name="searchuri" default="" label="SEARCH_URI" dir="ltr" description="TPL5_SEARCH_URI_HELP" />
+		<param type="text" name="searchpar" default="q" label="SEARCH_PARAM" dir="ltr" description="TPL5_SEARCH_PARAM_HELP" />
+		<param type="radio" name="login" default="1" label="LOGIN" description="TPL5_LOGIN_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="langselect" default="1" label="LANGUAGE" description="TPL5_LANG_ITEMS">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="cart" default="0" label="CART_ITEMS" description="TPL5_CART_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="TPL5_FRONTPAGE" groupid="1003">
+		<param type="list" name="sliderimage" default="0" label="SLIDER_OR_IMAGE" description="TPL5_FRONTPAGE_HELP">
+			<option value="0" show="1004" hide="1005">FRONTPAGE_SLIDER</option>
+			<option value="1" show="1005" hide="1004">FRONTPAGE_IMAGE</option>
+			<option value="2" hide="1004,1005">NOTHING</option>
+		</param>
+	</params>
+	<params group="FRONTPAGE_SLIDER" groupid="1004">
+		<param type="comment" name="fscom" default="FRONTPAGE_SLIDER_DESC" label="" description="" />
+		<param type="text" name="sltitle" default="" multilingual="1" label="TITLE" description="Optional slider title" />
+		<param type="file" name="sl1" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 1" description="" />
+		<param type="text" name="slcaption1" default="" multilingual="1" label="CAPTION" labelsfx=" 1" description="" />
+		<param type="text" name="sllink1" default="" dir="ltr" label="LINK" labelsfx=" 1" description="" />
+		<param type="file" name="sl2" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 2" description="" />
+		<param type="text" name="slcaption2" default="" multilingual="1" label="CAPTION" labelsfx=" 2" description="" />
+		<param type="text" name="sllink2" default="" dir="ltr" label="LINK" labelsfx=" 2" description="" />
+		<param type="file" name="sl3" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 3" description="" />
+		<param type="text" name="slcaption3" default="" multilingual="1" label="CAPTION" labelsfx=" 3" description="" />
+		<param type="text" name="sllink3" default="" dir="ltr" label="LINK" labelsfx=" 3" description="" />
+		<param type="file" name="sl4" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 4" description="" />
+		<param type="text" name="slcaption4" default="" multilingual="1" label="CAPTION" labelsfx=" 4" description="" />
+		<param type="text" name="sllink4" default="" dir="ltr" label="LINK" labelsfx=" 4" description="" />
+		<param type="file" name="sl5" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 5" description="" />
+		<param type="text" name="slcaption5" default="" multilingual="1" label="CAPTION" labelsfx=" 5" description="" />
+		<param type="text" name="sllink5" default="" dir="ltr" label="LINK" labelsfx=" 5" description="" />
+		<param type="file" name="sl6" path="templates/five/images/slider/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" labelsfx=" 6" description="" />
+		<param type="text" name="slcaption6" default="" multilingual="1" label="CAPTION" labelsfx=" 6" description="" />
+		<param type="text" name="sllink6" default="" dir="ltr" label="LINK" labelsfx=" 6" description="" />
+	</params>
+	<params group="FRONTPAGE_IMAGE" groupid="1005" collapsed="1">
+		<param type="comment" name="fpimgcom" default="FRONTPAGE_IMAGE_HELP" label="" description="" />
+		<param type="file" name="fpimg" path="templates/five/images/bg/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" description="Recommended width: 1920px or more. Recommended height: 300 pixels" />
+		<param type="position" name="fpimgpos" default="" label="MODULES_POSITION" none="1" description="" />
+	</params>
+	<params group="BG_IMAGE" groupid="1006">
+		<param type="comment" name="bgcom" default="BG_IMAGE_HELP" label="" description="" />
+		<param type="itemstatus" name="bgtype" default="0" label="IMAGE" description="">
+			<option value="0" color="red">NOTHING</option>
+			<option value="1" color="green">BG_IMAGE</option>
+		</param>
+		<param type="file" name="bgimg" path="templates/five/images/bg/{multisite/}" filetype="jpg" maxsize="0" resizewidth="0" resizeheight="0" default="" label="IMAGE" description="Recommended width: 1920px or more. Recommended height: 300 pixels" />
+	</params>
+	<params group="PATHWAY_MARQUEE" groupid="1007">
+		<param type="list" name="pathway" default="3" label="SHOW_PATHWAY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+			<option value="2">YES_EXCEPT_FPAGE</option>
+			<option value="3">YES_FPAGE_MARQUEE</option>
+			<option value="4">NO_FPAGE_MARQUEE</option>
+			<option value="5">NO_EVERY_MARQUEE</option>
+		</param>
+		<param type="textarea" name="marquee" default="" multilingual="1" cols="120" rows="4" dir="ltr" label="MARQUEE" description="MARQUEE_DESC" />
+		<param type="range" name="marqspeed" default="7" first="1" last="30" step="1" label="MARQUEE_SPEED" description="" />
+	</params>
+	<params group="SIDE_COLUMN" groupid="1008">
+		<param type="itemstatus" name="sidecol" default="1" label="SHOW_SIDECOL" description="">
+			<option value="0" color="red">NO</option>
+			<option value="1" color="green">YES</option>
+			<option value="2" color="lightgreen">YES_EXCEPT_FPAGE</option>
+		</param>
+		<param type="comment" name="sidecol_com" default="SIDECOL_HIDE_PATHS" label="" description="" />
+		<param type="text" name="hidecol_path1" default="" dir="ltr" label="HIDE_PATH" labelsfx=" 1" description="" />
+		<param type="text" name="hidecol_path2" default="" dir="ltr" label="HIDE_PATH" labelsfx=" 2" description="" />
+		<param type="text" name="hidecol_path3" default="" dir="ltr" label="HIDE_PATH" labelsfx=" 3" description="" />
+		<param type="text" name="hidecol_path4" default="" dir="ltr" label="HIDE_PATH" labelsfx=" 4" description="" />
+		<param type="text" name="hidecol_path5" default="" dir="ltr" label="HIDE_PATH" labelsfx=" 5" description="" />
+	</params>
+	<params group="SOCIAL_NETS" groupid="1009">
+		<param type="text" name="facebook" default="" dir="ltr" label="Facebook" description="Full URL to facebook page" />
+		<param type="text" name="twitter" default="" dir="ltr" label="Twitter" description="Full URL to Twitter page" />
+		<param type="text" name="youtube" default="" dir="ltr" label="Youtube" description="Full URL to Youtube page" />
+		<param type="text" name="flickr" default="" dir="ltr" label="Flickr" description="Full URL to Flickr page" />
+		<param type="text" name="instagram" default="" dir="ltr" label="Instagram" description="Full URL to Instagram page" />
+		<param type="text" name="linkedin" default="" dir="ltr" label="Linked in" description="Full URL to Linked in page" />
+		<param type="text" name="pinterest" default="" dir="ltr" label="Pinterest" description="Full URL to Pinterest page" />
+		<param type="text" name="tumblr" default="" dir="ltr" label="Tumblr" description="Full URL to Tumblr page" />
+		<param type="text" name="tripadvisor" default="" dir="ltr" label="TripAdvisor" description="Full URL to Trip Advisor page" />
+		<param type="radio" name="rss" default="1" label="RSS" description="Show link to site RSS/ATOM feeds?">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="sitemap" default="1" label="SITEMAP" description="Show link to Sitemap? Component Sitemap is required.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="contact" default="content:contact-us.html" dir="ltr" label="CONTACT" description="CONTACT_URI_HELP" />
+		<param type="text" name="phone" default="" dir="ltr" label="TELEPHONE" description="" />
+	</params>
+	<params group="FOOTER" groupid="1010">
+		<param type="radio" name="copyright" default="1" label="SHOW_COPYRIGHT" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="copyrighttxt" default="" dir="ltr" label="COPYRIGHT_TEXT" description="" />
+	</params>
+</package>

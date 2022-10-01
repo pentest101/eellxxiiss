@@ -1,0 +1,19 @@
+<package type="module" section="backend">
+	<name>mod_adminarticles</name>
+	<title>Latest and Popular articles</title>
+	<created>2022-05-08 10:25:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2022 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[This administration module displays a list of the most <strong>popular</strong> or the <strong>latest</strong> articles added on site.]]></description>
+	<dependencies>
+		<dependency type="core" version="5.x">elxis</dependency>
+		<dependency type="component" version="2.x">content</dependency>
+	</dependencies>
+	<params></params>
+</package>

@@ -1,0 +1,110 @@
+<package type="module" section="frontend">
+	<name>mod_ads</name>
+	<title>Advertisements</title>
+	<created>2022-03-17 19:22:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2022 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>2.0</version>
+	<description><![CDATA[Displays an advertisement text, image banner, flash or Google Adsense ads.]]></description>
+	<dependencies>
+		<dependency type="core" version="5.x">elxis</dependency>
+	</dependencies>
+	<params groupid="1300" collapsed="0">
+		<param type="list" name="source" default="0" label="SOURCE" description="SOURCE_DESC">
+			<option value="0" show="1001,1002,1003,1004,1005,1006,1007,1008,1201,1202,1203,1204,1205,1206,1207,1208" hide="1101,1102,1103,1104,1105,1106,1107,1108,1200">TEXT</option>
+			<option value="1" show="1101,1102,1103,1104,1105,1106,1107,1108,1201,1202,1203,1204,1205,1206,1207,1208" hide="1001,1002,1003,1004,1005,1006,1007,1008,1200">IMAGE</option>
+			<option value="3" show="1200" hide="1001,1002,1003,1004,1005,1006,1007,1008,1101,1102,1103,1104,1105,1106,1107,1108,1201,1202,1203,1204,1205,1206,1207,1208">Google AdSense / HTML</option>
+		</param>
+		<param type="list" name="target" default="0" label="TARGET" description="TARGET_DESC">
+			<option value="0">NEW_WINDOW</option>
+			<option value="1">SAME_WINDOW</option>
+		</param>
+		<param type="radio" name="stretch" default="1" label="ADS_STRETCH_IMG" description="ADS_STRETCH_IMG_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="border" default="1" label="BORDER" description="BORDER_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params groupid="1001" collapsed="1">
+		<param type="text" name="text1" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 1" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1101" collapsed="1">
+		<param type="imagelist" name="image1" default="" label="ADS_IMAGE" labelsfx=" 1" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1201" collapsed="1">
+		<param type="text" name="link1" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 1" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1002" collapsed="1">
+		<param type="text" name="text2" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 2" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1102" collapsed="1">
+		<param type="imagelist" name="image2" default="" label="ADS_IMAGE" labelsfx=" 2" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1202" collapsed="1">
+		<param type="text" name="link2" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 2" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1003" collapsed="1">
+		<param type="text" name="text3" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 3" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1103" collapsed="1">
+		<param type="imagelist" name="image3" default="" label="ADS_IMAGE" labelsfx=" 3" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1203" collapsed="1">
+		<param type="text" name="link3" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 3" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1004" collapsed="1">
+		<param type="text" name="text4" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 4" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1104" collapsed="1">
+		<param type="imagelist" name="image4" default="" label="ADS_IMAGE" labelsfx=" 4" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1204" collapsed="1">
+		<param type="text" name="link4" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 4" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1005" collapsed="1">
+		<param type="text" name="text5" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 5" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1105" collapsed="1">
+		<param type="imagelist" name="image5" default="" label="ADS_IMAGE" labelsfx=" 5" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1205" collapsed="1">
+		<param type="text" name="link5" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 5" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1006" collapsed="1">
+		<param type="text" name="text6" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 6" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1106" collapsed="1">
+		<param type="imagelist" name="image6" default="" label="ADS_IMAGE" labelsfx=" 6" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1206" collapsed="1">
+		<param type="text" name="link6" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 6" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1007" collapsed="1">
+		<param type="text" name="text7" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 7" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1107" collapsed="1">
+		<param type="imagelist" name="image7" default="" label="ADS_IMAGE" labelsfx=" 7" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1207" collapsed="1">
+		<param type="text" name="link7" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 7" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1008" collapsed="1">
+		<param type="text" name="text8" default="" multilingual="1" size="60" maxlength="255" dir="rtl" label="ADS_TEXT" labelsfx=" 8" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1108" collapsed="1">
+		<param type="imagelist" name="image8" default="" label="ADS_IMAGE" labelsfx=" 8" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1208" collapsed="1">
+		<param type="text" name="link8" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK" labelsfx=" 8" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1200" collapsed="1">
+		<param type="textarea" name="adsense" default="" cols="60" rows="5" dir="ltr" label="ADSENSE_CODE" description="ADSENSE_CODE_DESC" />
+	</params>
+</package>

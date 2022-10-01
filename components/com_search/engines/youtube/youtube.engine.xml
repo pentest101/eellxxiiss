@@ -1,0 +1,43 @@
+<package type="engine">
+	<name>youtube</name>
+	<title>YouTube</title>
+	<created>2019-04-09 21:35:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2019 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description>
+		<![CDATA[Extends elxis search to YouTube videos. Uses Youtube API v3 which requires a searver key to perform search. 
+		Create your own key at <a href="https://console.developers.google.com" target="_blank">console.developers.google.com</a>]]>
+	</description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+		<package type="component" version="2.x">search</package>
+	</dependencies>
+	<params>
+		<param type="range" name="limit" first="5" last="50" step="1" default="10" label="LIMIT" description="ITEMS_PER_PAGE" />
+		<param type="list" name="ordering" default="r" label="ORDERING" dir="rtl" description="DEFAULT_ORDERING">
+			<option value="r">RELEVANCY</option>
+			<option value="dd">NEWER_FIRST</option>
+			<option value="hd">MOST_POPULAR_FIRST</option>
+			<option value="vd">RATING</option>
+			<option value="ta">TITLE</option>
+		</param>
+
+		<param type="itemstatus" name="columns" default="1" label="COLUMNS" description="NUMBER_COLUMNS_DESC">
+			<option value="1" color="blue">1</option>
+			<option value="2" color="blue">2</option>
+		</param>
+		<param type="list" name="safe" default="moderate" label="SAFE_SEARCH" dir="rtl" description="">
+			<option value="none">NONE</option>
+			<option value="moderate">MODERATE</option>
+			<option value="strict">STRICT</option>
+		</param>
+		<param type="text" name="channelid" default="" label="Channel ID" dir="ltr" description="Search for items only in this particual Channel" />
+		<param type="text" name="key" default="" label="Server key" dir="ltr" description="Create server key at https://console.developers.google.com" />
+	</params>
+</package>

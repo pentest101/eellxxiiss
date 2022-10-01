@@ -1,0 +1,16 @@
+/**
+Elxis CMS
+Module Categories
+Author: Ioannis Sannos
+http://www.elxis.org
+*/
+ul.elx5_modcateg, ul.elx5_modcateg-rtl { margin:0; padding:0; list-style:none; }
+ul.elx5_modcateg li, ul.elx5_modcateg-rtl li { margin:0 0 5px 0; padding:0; list-style:none; display: block; }
+ul.elx5_modcateg li.elx5_modcateg_sub { padding:0 0 0 20px; }
+ul.elx5_modcateg-rtl li.elx5_modcateg_sub { padding:0 20px 0 0; }
+ul.elx5_modcateg li a, ul.elx5_modcateg-rtl li a { display:block; font-weight:bold; }
+ul.elx5_modcateg li.elx5_modcateg_sub a, ul.elx5_modcateg-rtl li.elx5_modcateg_sub a { font-weight:normal; }
+ul.elx5_modcateg_hor li { margin:0 15px 5px 0; display: inline-block; }
+ul.elx5_modcateg-rtl.elx5_modcateg_hor li { margin:0 0 5px 15px; display: inline-block; }
+ul.elx5_modcateg_hor li.elx5_modcateg_sub { padding:0; }
+ul.elx5_modcateg_hor li a { display:inline; }

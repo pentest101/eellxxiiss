@@ -1,0 +1,18 @@
+/**
+Elxis CMS
+Copyright (c) 2006-2019 Elxis CMS (http://www.elxis.org). All rights reserved.
+CSS for Images search engine
+*/
+
+.elx5_ieng_container { margin: 25px 0; padding: 0; display:flex; justify-content: space-between; flex-direction: row; align-items: stretch; flex-flow: row wrap; font-size: 0; }
+.elx5_ieng_box { margin: 0 10px 10px 0; padding: 0; flex: auto; width: 160px; max-width:320px; }
+.elx5_ieng_imgbox a { margin:0; padding:0; border:none; text-decoration: none; text-align:center; }
+.elx5_ieng_imgbox img { margin: 0; padding: 3px; border: 1px solid #CCCCCC; width:100%; height:auto; box-sizing: border-box; }
+.elx5_ieng_notes { margin: 0; padding: 0; text-align: center; font: normal 11px/14px tahoma, arial, serif; color: #777777; }
+.elx5_ieng_box:hover .elx5_ieng_imgbox img { border: 1px solid #888; }
+.elx5_ieng_box:hover .elx5_ieng_notes { color: #000; }
+
+@media screen and (max-width: 400px) {
+	.elx5_ieng_box { margin-right:0; width:100%; max-width:auto; }
+	.elx5_ieng_notes { display:none; visibility:hidden; }
+}

@@ -1,0 +1,184 @@
+<package type="module">
+	<name>mod_iosslider</name>
+	<title>IOS Slider</title>
+	<created>2019-04-10 20:01:00</created>
+	<author>Ioannis Sannos</author>
+	<authoremail>info@isopensource.com</authoremail>
+	<authorurl>http://www.isopensource.com</authorurl>
+	<copyright>(C) 2006-2019 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>2.0</version>
+	<description><![CDATA[The module slides article or custom images, ideal for the site frontopage. If you slide article images then 
+	only articles with view access for visitors will be loaded.]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+		<package type="component" version="2.x">content</package>
+	</dependencies>
+	<params>
+		<param type="list" name="source" default="0" label="SOURCE" description="SOURCE_DESC">
+			<option value="0" hide="1001,1002,1003,1004,1005">LATEST_ARTICLES</option>
+			<option value="6" hide="1001,1002,1003,1004,1005">IMPORTANT_ARTICLES</option>
+			<option value="1" show="1001" hide="1002,1003,1004,1005">CATEGORY</option>
+			<option value="2" show="1002" hide="1001,1003,1004,1005">MULTIPLE_CATEGORIES</option>
+			<option value="3" show="1003" hide="1001,1002,1004,1005">USER_IMAGES</option>
+			<option value="4" show="1004" hide="1001,1002,1003,1005">IOSR Hotels</option>
+			<option value="5" show="1005" hide="1001,1002,1003,1004">FOLDER</option>
+		</param>
+	</params>
+	<params groupid="1001" collapsed="1">
+		<param type="category" name="catid" default="" dir="ltr" label="CATEGORY" description="" />
+		<param type="radio" name="subcats" default="0" label="INCL_SUBCATEGORIES" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params groupid="1002" collapsed="1">
+		<param type="text" name="catids" default="" dir="ltr" label="CATEGORIES" description="COMMA_SEP_CIDS" />
+	</params>
+	<params groupid="1003" collapsed="1">
+		<param type="text" name="title1" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link1" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image1" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title2" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link2" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image2" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title3" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link3" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image3" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title4" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link4" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image4" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title5" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link5" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image5" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title6" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="url" name="link6" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image6" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+	</params>
+	<params groupid="1004" collapsed="1">
+		<param type="comment" name="hotels_com" default="IOSR_HOTELS_COM" label="" description="" />
+		<param type="text" name="locid" default="0" dir="ltr" label="LOCATION_ID" description="" />
+		<param type="radio" name="sublocs" default="1" label="INCL_SUBLOCATIONS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="hids" default="" dir="ltr" label="HOTELS_IDS" description="HOTELS_IDS_DESC" />
+	</params>
+	<params groupid="1005" collapsed="1">
+		<param type="comment" name="folder_com" default="FOLDER_UPLOAD_DESC" label="" description="" />
+		<param type="folderlist" name="folder" default="sample_slider" label="FOLDER" directory="media/images/{multisite/}" description="" />
+		<param type="text" name="folderlink" default="" dir="ltr" label="LINK" description="Optional link. Full URL or Elxis URI." />
+		<param type="radio" name="mlfolders" default="0" label="MULTILINGUAL_FOLDERS" description="If enabled, you can create additional folders for each language named as the main folder with the _xx suffix where XX the language identifier. For example myfolder_el, myfolder_it, myfolder_ru.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="DISPLAY_OPTIONS" collapsed="0">
+		<param type="list" name="img_height" default="0" label="IMAGE_HEIGHT" description="IMAGE_HEIGHT_DESC">
+			<option value="0">AUTOMATIC</option>
+			<option value="220">220</option>
+			<option value="240">240</option>
+			<option value="260">260</option>
+			<option value="280">280</option>
+			<option value="300">300</option>
+			<option value="320">320</option>
+			<option value="340">340</option>
+			<option value="360">360</option>
+			<option value="380">380</option>
+			<option value="400">400</option>
+			<option value="450">450</option>
+		</param>
+		<param type="itemstatus" name="border" default="0" label="BORDER_COLOUR" description="">
+			<option value="0" color="none">NONE</option>
+			<option value="1" color="white">White</option>
+			<option value="2" color="gray">Gray</option>
+			<option value="3" color="darkgray">Dark gray</option>
+			<option value="4" color="black">Black</option>
+			<option value="5" color="blue">Blue</option>
+		</param>
+		<param type="list" name="effect" default="fade" label="TRANSITION_EFFECT" description="">
+			<option value="basic">basic</option>
+			<option value="blast">blast</option>
+			<option value="blinds">blinds</option>
+			<option value="blur">blur</option>
+			<option value="fade">fade</option>
+			<option value="kenburns">kenburns</option>
+			<option value="rotate">rotate</option>
+			<option value="photo">photo</option>
+			<option value="collage">collage</option>
+			<option value="seven">seven</option>
+			<option value="cube">cube</option>
+			<option value="domino">domino</option>
+			<option value="slices">slices</option>
+			<option value="stack">stack</option>
+		</param>
+		<param type="list" name="transdur" default="1500" label="TRANSITION_DURATION" description="">
+			<option value="500">0.5 sec</option>
+			<option value="1000">1 sec</option>
+			<option value="1500">1.5 sec</option>
+			<option value="2000">2 sec</option>
+			<option value="2500">2.5 sec</option>
+			<option value="3000">3 sec</option>
+			<option value="3500">3.5 sec</option>
+			<option value="4000">4 sec</option>
+		</param>
+		<param type="itemstatus" name="capeffect" default="0" label="CAPTION_EFFECT" description="">
+			<option value="0" color="blue">move</option>
+			<option value="1" color="blue">slide</option>
+			<option value="2" color="blue">fade</option>
+		</param>
+		<param type="range" name="delay" first="1" last="20" step="1" default="6" label="DELAY" description="DELAY_TIME_DESC" />
+		<param type="radio" name="autoplay" default="1" label="AUTO_PLAY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="playbuttons" default="0" label="PLAY_BUTTONS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="hoverstop" default="0" label="HOVER_STOP" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="bullets" default="1" label="BULLETS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="caption" default="1" label="CAPTION" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="controls" default="1" label="CONTROL_ARROWS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="range" name="limit" first="1" last="15" step="1" default="5" label="LIMIT" description="" />
+	</params>
+	<params group="OTHER_OPTIONS" collapsed="0">
+		<param type="radio" name="cache" default="2" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="2">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+	</params>
+</package>

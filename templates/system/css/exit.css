@@ -1,0 +1,112 @@
+body { padding:20px; font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; background:#24313C; box-sizing: border-box; }
+.exit5_pgwrapin {
+	margin:100px auto 0 auto; padding:20px; display:block; width:100%; max-width:480px; box-sizing: border-box;
+	border-radius: 8px; background:#FFFFFF; border-top: 8px solid #408BCB;
+}
+.exit5_pgwrapinred { border-top: 8px solid #ff656c; }
+.exit5_titlebox { margin:0 0 20px 0;  text-align: center; }
+.exit5_titlebox h1 {
+	margin:0 0 2px 0; border:none; font:bold 18px/25px "Open Sans", Helvetica, Arial, sans-serif; color: #272727; text-transform: uppercase; text-align: center;
+}
+.exit5_title_desc { font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #888888; text-align: center; }
+.exit5_message { margin:0 0 20px 0; padding:0; font:normal 14px/17px Tahoma, Arial, sans-serif; color: #272727; text-align: left; }
+.exit5_message_error { margin:0 0 20px 0; padding:8px; font:normal 14px/17px Tahoma, Arial, sans-serif; color: #FFFFFF; text-align: left; background-color: #ff656c; border-radius:5px; }
+label.exit5_label { font:normal 14px/23px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; margin:0 0 3px 0; padding:0; display:block; float:none; width:100%; }
+input.exit5_smpgtext, input[type=text].exit5_smpgtext, input[type=password].exit5_smpgtext, input.exit5_smpgtext:hover, input.exit5_smpgtext:focus {
+	width: 100%; height: 42px; box-sizing: border-box; border-radius: 5px; border: 1px solid #CCCCCC; box-shadow:none; background: #FFFFFF;
+	margin:0; padding:0 20px 0 50px; font:400 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color: #272727; outline: none;
+}
+input#uname { background: #FFFFFF url('images/user.png') 20px top no-repeat; background-size: 16px 80px; }
+input#uname:focus { background: #FFFFFF url('images/user.png') 20px bottom no-repeat; background-size: 16px 80px; border: 1px solid #408BCB; }
+input#pword { background: #FFFFFF url('images/lock.png') 20px top no-repeat; background-size: 16px 80px; }
+input#pword:focus { background: #FFFFFF url('images/lock.png') 20px bottom no-repeat; background-size: 16px 80px; border: 1px solid #408BCB; }
+input#uname:active, input#pword:active { border: 1px solid #408BCB; }
+/* Chrome fix */
+@-webkit-keyframes unamebg { to { background: #FFFFFF url('images/user.png') 20px top no-repeat; background-size: 16px 80px; } }
+@-webkit-keyframes unamebgfoc { to { background: #FFFFFF url('images/user.png') 20px bottom no-repeat; background-size: 16px 80px; } }
+@-webkit-keyframes pwordbg { to { background: #FFFFFF url('images/lock.png') 20px top no-repeat; background-size: 16px 80px; } }
+@-webkit-keyframes pwordbgfoc { to { background: #FFFFFF url('images/lock.png') 20px bottom no-repeat; background-size: 16px 80px; } }
+input#uname:-webkit-autofill { -webkit-animation-name: unamebg; -webkit-animation-fill-mode: both; }
+input#uname:focus:-webkit-autofill { -webkit-animation-name: unamebgfoc; -webkit-animation-fill-mode: both; }
+input#pword:-webkit-autofill { -webkit-animation-name: pwordbg; -webkit-animation-fill-mode: both; }
+input#pword:focus:-webkit-autofill { -webkit-animation-name: pwordbgfoc; -webkit-animation-fill-mode: both; }
+button[type=submit].exit5_btn, button[type=button].exit5_btn, button.exit5_btn {
+	display:block; width:100%; box-sizing: border-box; border-radius: 5px; border: 1px solid #367CB7; color: #FFFFFF; outline: none; 
+	cursor:pointer; background: #408BCB; font:700 14px/17px "Open Sans", Arial, sans-serif; text-transform: uppercase;
+	margin:0; padding: 10px; box-shadow:none; text-align:center; white-space: nowrap; text-overflow: ellipsis;
+}
+button[type=submit].exit5_btn:hover, button[type=button].exit5_btn:hover, button.exit5_btn:hover { background:#5CA1DB; }
+.exit5_lang_wrap { margin:0 0 20px 0; padding:0 20px; box-sizing: border-box; }
+.exit5_downpick {
+	margin:0 0 20px 0; padding:0 0 3px 0; font:normal 13px/16px "Open Sans", Arial, sans-serif; color: #666666; text-align:center; 
+	border-bottom:1px solid #CCCCCC; position: relative;
+}
+.exit5_downpick:after {
+	content:''; position: absolute; top: 18px; left: 50%; border-style: solid; border-width: 9px 9px 0; border-color: #FFFFFF transparent; display: block; width: 0; z-index: 1;
+}
+.exit5_downpick:before {
+	content:''; position: absolute; top: 19px; left: 50%; border-style: solid; border-width: 9px 9px 0; border-color: #CCCCCC transparent; display: block; width: 0; z-index: 1;
+}
+.exit5_lang_wrap img { width:32px; height:32px; float:left; margin:0 10px 0 0; padding:0; border:none; vertical-align:middle; filter: grayscale(100%); }
+.exit5_lang_wrap:hover img { filter: none; }
+.exit5_lang_selwrap { margin:0 0 0 42px; padding:0; }
+select.exit5_select_lang, select.exit5_select_lang:hover, select.exit5_select_lang:focus {
+	margin:0; padding:6px; color: #333333; border:none; border-radius:0; display:block; width:100%; height:auto; box-shadow: none;
+	font: 14px/20px "Open Sans", Helvetica, Arial, sans-serif; background: #FFFFFF; box-sizing: border-box;
+}
+select.exit5_select_lang option { background:#FFFFFF; }
+select.exit5_select_lang:hover { color:#111111; }
+select.exit5_select_lang:focus { color:#111111; outline:none; }
+
+.exit5_pgfooter { margin:30px 0 0 0; }
+.exit5_pgfooter_copy { margin:0 0 8px 0; text-align:center; font: normal 13px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#888888; }
+.exit5_pgfooter_copy a, .exit5_pgfooter_copy a:visited, .exit5_pgfooter_copy a:active, .exit5_pgfooter_copy a:hover {
+	margin:0; padding:0; text-decoration:none; border:none; font: 13px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#CCCCCC;
+}
+.exit5_pgfooter_copy a:hover { color:#FFFFFF; }
+a.exit5_powerby, a.exit5_powerby:visited, a.exit5_powerby:active, a.exit5_powerby:hover {
+	margin:0; padding:0; display:block; text-align:center; text-decoration:none; border:none; font: normal 12px/16px Tahoma, Arial, sans-serif; color:#666666;
+}
+a.exit5_powerby:hover { color:#FFFFFF; }
+.exit5_refcode { margin:0 0 16px 0; font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color: #666666; box-sizing: border-box; }
+.exit5_refcode span { display:inline-block; padding:1px 5px; background-color:#A5B6C0; font:normal 13px/15px Tahoma, Helvetica, Arial, sans-serif; color:#FFFFFF; border-radius: 3px; box-sizing: border-box; }
+.exit5_horlinks { margin:30px 0; text-align:center; box-sizing:border-box; }
+.exit5_horlinks a, .exit5_horlinks a:visited, .exit5_horlinks a:active, .exit5_horlinks a:hover {
+	margin:0 10px 10px 0; border:none; text-decoration: none; font:normal 16px/20px "Open Sans", Helvetica, Arial, sans-serif; color: #444444;
+	display:inline-block; width:auto; text-align: center; background:#EFEFEF; border-radius: 3px;
+	padding:2px 10px;
+}
+.exit5_horlinks a:hover { background:#31649D; color:#FFFFFF; }
+.exit5_errurl {
+	margin:0 0 20px 0; border:none; text-decoration: none; font:normal 14px/18px Tahoma, Helvetica, Arial, sans-serif; color: #666666;
+	text-align: left; background:#EFEFEF; border-radius: 3px; overflow:hidden; word-wrap: nowrap;
+	padding:4px 10px;
+}
+ul.exit5_menu { margin:20px 0; padding:0; text-indent:0; list-style:none; }
+ul.exit5_menu > li {
+	margin:0 0 4px 0; padding:0; list-style:none; border:none; text-indent:0; font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; 
+	display: block; box-sizing: border-box;
+}
+ul.exit5_menu > li > a {
+	margin:0; padding:4px 10px; display:block; width:100%; background: #9DACB5; box-sizing: border-box;
+	font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; text-decoration: none; border-radius:3px;
+}
+ul.exit5_menu > li:first-child > a { background: #367FA9; }
+ul.exit5_menu > li > a i { margin-right:8px; }
+ul.exit5_menu > li > a:hover { background-color:#ff656c; }
+
+@media only screen and (max-width:920px) {
+	.exit5_pgwrapin { margin-top: 90px; }
+}
+@media only screen and (max-width:850px) {
+	.exit5_pgwrapin { margin-top: 70px; }
+}
+@media only screen and (max-width:650px) {
+	.exit5_pgwrapin { margin-top: 50px; }
+	label.exit5_label { display:none; visibility:hidden; }
+	.exit5_message { display:none; visibility:hidden; }
+	.exit5_powerby { display:none; visibility:hidden; }
+}
+@media only screen and (max-width:480px) {
+	.exit5_pgwrapin { margin: 20px; width:auto; }
+}

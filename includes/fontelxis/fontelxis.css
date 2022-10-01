@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'elxis';
+	src: url('elxis.eot?8781133');
+	src: url('elxis.eot?8781133#iefix') format('embedded-opentype'),
+		url('elxis.woff2?8781133') format('woff2'),
+		url('elxis.woff?8781133') format('woff'),
+		url('elxis.ttf?8781133') format('truetype'),
+		url('elxis.svg?8781133#elxis') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+ [class^="felxis-"]:before, [class*=" felxis-"]:before {
+	font-family: "elxis";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.felxis-logo:before { content: '\e800'; }

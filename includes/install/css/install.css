@@ -1,0 +1,234 @@
+/**
+Package			Elxis CMS
+Subpackage		Installer / CSS
+Author			Elxis Team ( http://www.elxis.org )
+Copyright		(c) 2006-2019 Elxis Team (http://www.elxis.org). All rights reserved.
+License			Elxis Public License ( http://www.elxis.org/elxis-public-license.html
+Last upate		2019-02-27 :19:04:00
+Description 	CSS stylesheet for Elxis installer
+*/
+
+/* LAYOUT */
+h1 { font:normal 24px/28px "Open Sans", Helvetica, Arial, sans-serif; color:#153d54; margin:0 0 12px 0; }
+h2 { font:normal 22px/26px "Open Sans", Helvetica, Arial, sans-serif; color:#153d54; margin:0 0 12px 0; }
+h3 { font:normal 18px/22px "Open Sans", Helvetica, Arial, sans-serif; color:#444; margin:0 0 10px 0; }
+h4 { font:bold 15px/19px "Open Sans", Helvetica, Arial, sans-serif; color:#222; margin:0 0 8px 0; }
+body { margin:0; padding:0; background:#DDF3FF; font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; box-sizing: border-box; }
+p { font:normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; margin:0 0 20px 0; padding:0; text-align:justify; }
+header.ielx_header { position:fixed; top:0; left:0; right:0; display:block; margin:0; padding:0; z-index:1030; box-sizing:border-box; background:#000000; height:90px; }
+div.ielx_header1 { margin:0; padding:0; background:#000000 url(strips.png) 0 0 repeat; height:50px; overflow:hidden; }
+div.ielx_header2 { margin:0; padding:0; background:#153D54; border-top: 1px solid #205F82; border-bottom: 1px solid #205F82; height:40px; overflow:hidden; }
+.ielx_inner { margin:0 auto; padding:0; max-width:970px; }
+.ielx_logo { margin:0; padding:0; width:120px; float:left; overflow: hidden; }
+.ielx_logo a { text-decoration: none; border:none; }
+.ielx_logo img { margin:0; padding:0; width:100%; height:auto; border:none; }
+.ielx_langbox { margin:0; padding:0; width:60px; float:right; overflow: hidden; }
+.ielx_langbox:after { content:' '; display:block; clear:both; }
+form.ielx_fmlng { margin:0; padding:0; display:block; width:100%; }
+select.ielx_lang, select.ielx_lang:hover, select.ielx_lang:focus {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; box-shadow: none; margin:0; padding:10px 15px; display: block; width: 100%; height:50px; 
+	box-sizing: border-box; border: none; background: #000000; border-radius: 0; transition: none; cursor: pointer;
+	font: normal 16px/30px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF;
+}
+select.ielx_lang > option {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; margin:0; padding:6px 0; border: none; box-sizing: border-box;
+	font: normal 16px/20px "Open Sans", Helvetica, Arial, sans-serif; background: #FFFFFF; color: #272727;
+}
+.ielx_stepbox { margin:0; padding:0; width:200px; float:left; }
+.ielx_step {
+	margin:4px 5px 0 0; padding:4px; display:block; float:left; border-radius:50%; background:#CC0000; text-align:center;
+	font: normal 16px/22px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; width:32px; height:32px; box-sizing: border-box;
+}
+.ielx_steptitle { margin:0; padding:0; font: normal 15px/40px "Open Sans", Helvetica, Arial, sans-serif; color: #CCCCCC; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; }
+.ielx_verbox { margin:0; padding:0; width:200px; float:right; overflow: hidden; box-sizing: border-box; }
+.ielx_verbox:after { content:' '; display:block; clear:both; }
+.ielx_version {
+	margin:6px 0; padding:3px 4px; box-sizing: border-box; text-align:center; background:#246B91; border-radius:3px;
+	font: bold 13px/22px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF;
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.ielx_verbox span { font-weight:normal; color:#C6E5FF; }
+.ielx_contents { margin:0; padding:90px 0 70px 0; }
+.ielx_contentbox { margin:30px 0; padding:20px; background:#FFFFFF; border:1px solid #DDD; border-radius:6px; }
+.ielx_footer {
+    position: fixed; bottom: 0; left: 0; margin: 0 auto; padding: 15px; width: 100%;
+    background: #FFFFFF; text-align: center; border-top: 1px solid #d2d6de; box-sizing: border-box;
+    font: normal 13px/20px "Open Sans", Helvetica, Arial, sans-serif; color: #444;
+}
+.ielx_footer a, .ielx_footer a:visited, .ielx_footer a:hover { color:#222; text-decoration:none; }
+.ielx_footer a:hover { text-decoration:underline; }
+
+.ielx_block { margin:0 0 30px 0; padding:0; display:block; max-height:1800px; box-sizing: border-box; transition: max-height 0.3s ease-in; }
+.ielx_blockinv { margin:0; padding:0; display:block; max-height:0; overflow: hidden; box-sizing: border-box; transition: max-height 0.8s ease-in; }
+textarea.ielx_license {
+	margin:10px 0; padding:10px; display:block; width:100%; height:250px; border:1px solid #DDDDDD; background:#F2F2F2;
+	font:normal 13px/16px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; box-sizing: border-box;
+}
+.ielx_chkwrap { margin:20px 0 30px 0; padding:0; box-sizing: border-box; height:auto; }
+.ielx_chkwrap > div:after { content: ''; display:table; clear:both; }
+label.ielx_chklabel {
+	margin:0 0 12px 0; padding:0 0 0 35px; display: block; position: relative; cursor: pointer; font-size: 22px;
+	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	font: normal 16px/22px "Open Sans", Helvetica, Arial, sans-serif; color: #272727; width:100%;
+}
+label.ielx_chklabel input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+.ielx_chkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #EEEEEE; }
+label.ielx_chklabel:hover input ~ .ielx_chkmark { background-color: #CCC; }
+label.ielx_chklabel input:checked ~ .ielx_chkmark { background-color: #267F00; }
+.ielx_chkmark:after { content: ""; position: absolute; display: none; }
+label.ielx_chklabel input:checked ~ .ielx_chkmark:after { display: block; }
+label.ielx_chklabel .ielx_chkmark:after {
+	left: 9px; top: 5px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+}
+a.ielx_continue, a.ielx_continue:visited, a.ielx_continue:hover,
+a.ielx_nocontinue, a.ielx_nocontinue:visited, a.ielx_nocontinue:hover,
+a.ielx_back, a.ielx_back:visited, a.ielx_back:hover {
+	margin:0; padding:10px 20px; display:inline-block; text-align: center; width: 160px; background: #267F00;
+	font:bold 16px/20px "Open Sans", Helvetica, Arial, sans-serif; color:#FFFFFF;
+	text-decoration: none; border: none; border-radius: 4px; transition: all 0.5s;
+}
+a.ielx_nocontinue, a.ielx_nocontinue:visited, a.ielx_nocontinue:hover { background: #f4511e; cursor:not-allowed; }
+a.ielx_back, a.ielx_back:visited, a.ielx_back:hover { background: #f56954; }
+a.ielx_continue span, a.ielx_nocontinue span, a.ielx_back span { display: inline-block; position: relative; transition: 0.5s; }
+a.ielx_continue span:after { content: '\00bb'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s; }
+a.ielx_nocontinue span:after { content: '!'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s; }
+a.ielx_back span:before { content: '\00AB'; position: absolute; opacity: 0; top: 0; left: 20px; transition: 0.5s; }
+a.ielx_continue:hover span, a.ielx_nocontinue:hover span { padding-right: 25px; }
+a.ielx_back:hover span { padding-left: 25px; }
+a.ielx_continue:hover span:after, a.ielx_nocontinue:hover span:after { opacity: 1; right: 0; }
+a.ielx_back:hover span:before { opacity: 1; left: 0; }
+a.ielx_toggle, a.ielx_toggle:visited, a.ielx_toggle:hover {
+	margin:0; padding:0; display:block; width: 100%; background: transparent;
+	font:normal 14px/17px Tahoma, Arial, sans-serif; color:#555555; text-decoration: none; border: none;
+}
+a.ielx_toggle:hover { color:#5ea421; }
+/* forms */
+form.ielx_form { margin:0; padding:0; width:100%; display:block; box-sizing: border-box; }
+fieldset.ielx_fieldset { margin:0 0 20px 0; padding:10px; border:1px solid #BBBBBB; background:inherit; }
+fieldset.ielx_fieldset legend {
+	margin:0; padding:2px 8px; border:none; background:#5ea421;  border-radius:3px;
+	font:normal 13px/16px "Open Sans", Helvetica, Arial, sans-serif; color:#FFFFFF; display:inline-block; width:auto;
+}
+.ielx_formrow { margin:0 0 14px 0; padding:0; }
+.ielx_formrow::after { content:''; display:table; clear: both; }
+hr.simx_separator { margin:10px 0; padding:0; border:none; height: 1px; border-top: 1px dashed #BBBBBB; }
+label.ielx_label {
+	margin:0; padding:7px 0 0 0; display:block; float:left; width:180px; vertical-align:middle; box-sizing: border-box;
+	font:bold 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#272727;
+}
+.ielx_labelside { margin:0 0 0 190px; padding:0; font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; box-sizing: border-box; }
+input.ielx_text, input[type="text"].ielx_text, input[type="number"].ielx_text, input[type="file"].ielx_text, input[type="date"].ielx_text, input[type="email"].ielx_text {
+	margin:0; padding:6px 5px; font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; display:block; width:100%;
+	color:#272727;  background-color:#FFFFFF; border:1px solid #CCCCCC; outline:none; border-radius:0; box-sizing: border-box; transition: border-color 0.15s ease-in-out 0s;
+}
+select.ielx_select {
+	margin:0; padding:6px 12px; width:100%; height:31px; display:block; box-sizing: border-box;
+	font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#333333; 
+	border:1px solid #d2d6de; background:#FFFFFF; border-radius: 0; transition: border-color 0.15s ease-in-out 0s;
+}
+select.ielx_select > option { font:normal 14px/17px "Open Sans", Helvetica, Arial, sans-serif; color:#333333; }
+select.ielx_select:disabled { background:#F2F2F2; }
+select.ielx_select:hover, input.ielx_text:hover, input[type="text"].ielx_text:hover, input[type="number"].ielx_text:hover, input[type="file"].ielx_text:hover, input[type="date"].ielx_text:hover, input[type="email"].ielx_text:hover { border-color:#CCCCCC; }
+select.ielx_select:focus, input.ielx_text:focus, input[type="text"].ielx_text:focus, input[type="number"].ielx_text:focus, input[type="file"].ielx_text:focus, input[type="date"].ielx_text:focus, input[type="email"].ielx_text:hover { border-color:#3c8dbc; }
+label.ielx_switch {
+	position: relative; display: block; vertical-align: top; width: 100px; height: 30px; padding: 3px; margin: 0 10px 10px 0; cursor: pointer; 
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px); background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	box-sizing:content-box;	border-radius: 18px; box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.ielx_switchinput { position: absolute; top: 0; left: 0; opacity: 0; box-sizing:content-box; }
+.ielx_switchlabel {
+	position: relative; display: block; height: inherit; font-size: 10px; text-transform: uppercase; background: #eceeef; border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15); box-sizing:content-box;
+}
+.ielx_switchlabel:before, .ielx_switchlabel:after {
+	position: absolute; top: 50%; margin-top: -.5em; line-height: 1;
+	-webkit-transition: inherit; -moz-transition: inherit; -o-transition: inherit; transition: inherit; box-sizing:content-box;
+}
+.ielx_switchlabel:before { content: attr(data-off); right: 11px; color: #666666; text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+.ielx_switchlabel:after { content: attr(data-on); left: 11px; color: #FFFFFF; text-shadow: 0 1px rgba(0, 0, 0, 0.2); opacity: 0; }
+.ielx_switchinput:checked ~ .ielx_switchlabel { background: #2E9B18; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2); }
+.ielx_switchinput:checked ~ .ielx_switchlabel:before { opacity: 0; }
+.ielx_switchinput:checked ~ .ielx_switchlabel:after { opacity: 1; }
+.ielx_switchhandle {
+	position: absolute; top: 4px; left: 4px; width: 28px; height: 28px; background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0); 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0); border-radius: 100%; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.ielx_switchhandle:before {
+	content: ""; position: absolute; top: 50%; left: 50%; margin: -6px 0 0 -6px; width: 12px; height: 12px; background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF); border-radius: 6px; box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.ielx_switchinput:checked ~ .ielx_switchhandle { left: 74px; box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); }
+.ielx_switchlabel, .ielx_switchhandle {
+	transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+button.ielx_btn, button[type=submit].ielx_btn, button[type=button].ielx_btn {
+	margin:0; padding:10px 20px; display:inline-block; text-align: center; width: 160px; background: #267F00;
+	font:bold 16px/20px "Open Sans", Helvetica, Arial, sans-serif; color:#FFFFFF; cursor:pointer;
+	text-decoration: none; border: none; border-radius: 4px; transition: all 0.5s;
+}
+button.ielx_btn span { display: inline-block; position: relative; transition: 0.5s; }
+button.ielx_btn span:after { content: '\00bb'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s; }
+button.ielx_btn:hover span, button[type=submit].ielx_btn:hover span, button[type=button].ielx_btn:hover span { padding-right: 25px; }
+button.ielx_btn:hover span:after, button[type=submit].ielx_btn:hover span:after, button[type=button].ielx_btn:hover span:after { opacity: 1; right: 0; }
+.ielx_tip { margin:2px 0 0 0; font:normal 13px/16px Tahoma, Arial, sans-serif; color:#555555; }
+.ielx_note { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#555555; background-color:#E2E2E2; }
+.ielx_success { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#FFFFFF; background-color:#5EA421; }
+.ielx_warn { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#FFFFFF; background-color:#FF6600; }
+.ielx_error { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#FFFFFF; background-color:#dd4b39; }
+.ielx_info { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#FFFFFF; background-color:#246B91; }
+.ielx_sminfo, .ielx_sminfo {
+	margin:5px 0; padding:0; font:normal 14px/17px Tahoma, Arial, sans-serif; color: #555555; font-style: italic;
+}
+.ielx_sminfo:before, .ielx_sminfo:before {
+	content:'i'; display:inline-block; background:#48ABFF; border-radius:50%; margin:0 5px 0 0; padding:0;
+	font:normal 13px/17px Tahoma, Arial, sans-serif; color: #FFFFFF; width:17px; height:17px; text-align: center;
+}
+.ielx_textblock { margin:18px 0; padding:8px; border-radius:3px; font:normal 14px/17px Tahoma, Arial, sans-serif; color:#272727; background-color:#E2E2E2; }
+/* multiselect */
+.ielx_msel_items { margin:0 0 3px 0; padding: 0; }
+a.ielx_msel_item, a.ielx_msel_item:visited, a.ielx_msel_item:hover, a.ielx_msel_item:active {
+	display: inline-block; background:#1C90F3; border:none; border-radius: 3px; box-sizing: border-box; 
+	cursor: pointer; font: normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; 
+	margin: 0 10px 3px 0; outline: none; padding: 2px 10px; text-align: center; text-shadow: none; text-transform: none; text-decoration: none;
+}
+a.ielx_msel_item:hover { background:#dd4b39; color: #FFFFFF; }
+a.ielx_msel_item span { margin:0 0 0 10px; padding:0; font: normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color:#FFFFFF; }
+.ielx_msel_itemall {
+	display: inline-block; background:#5ea421; border:none; border-radius: 3px; box-sizing: border-box; 
+	font: normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; 
+	margin: 0 10px 3px 0; outline: none; padding: 2px 10px; text-align: center; text-shadow: none;
+}
+.ielx_msel_itemnone {
+	display: inline-block; background:#dd4b39; border:none; border-radius: 3px; box-sizing: border-box; 
+	font: normal 14px/18px "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; 
+	margin: 0 10px 3px 0; outline: none; padding: 2px 10px; text-align: center; text-shadow: none;
+}
+ul.ielx_finalacts { margin: 20px 0; padding:0; list-style:none; }
+ul.ielx_finalacts li {
+	list-style:none; margin:0 0 15px 0; padding:0; border:none; text-indent:0; 
+	font:normal 16px/20px "Open Sans", Helvetica, Arial, sans-serif; color:#272727; background:transparent;
+}
+ul.ielx_finalacts li a, ul.ielx_finalacts li a:visited, ul.ielx_finalacts li a:hover {
+	display:block; width:100%; margin:0; padding:0; text-decoration: none; font:inherit; color:#2773B4;
+}
+ul.ielx_finalacts li a:hover { color:#272727; }
+ul.ielx_finalacts li i, ul.ielx_finalacts li a i, ul.ielx_finalacts li a:visited i, ul.ielx_finalacts li a:hover i { font-size:20px; color:#267F00; margin-right:8px; }
+
+.ielx_invisible { display:none; visibility:hidden; }
+.ielx_zero { margin:0; padding:0; }
+.ielx_vspace { margin:20px 0; }
+.ielx_dsspace { margin-bottom:5px; }
+.ielx_vsspace { margin-top:5px; margin-bottom:5px; }
+
+@media only screen and (max-width:970px) {
+	.ielx_inner { padding:0 10px; }
+}
+@media only screen and (max-width:500px) {
+	.ielx_verbox { width:70px; }
+	.ielx_verbox span { display: none !important; visibility:hidden; }
+}
+@media only screen and (max-width:650px) {
+	label.ielx_label { margin:0 0 5px 0; padding:0; display:block; float:none; width:100%; }
+	.ielx_labelside { margin:0; padding:0; }
+}

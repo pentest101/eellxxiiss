@@ -1,0 +1,22 @@
+ul.modcom5_list { margin:0; padding:0; list-style:none; border:0; }
+ul.modcom5_list li { margin: 0 0 15px 0; padding:0; display:block; float:none; width:100%; box-sizing: border-box; }
+ul.modcom5_list li.modcom5_nocomments { margin:0; padding:0; font:normal 14px/18px "Open Sans", Helvetica, arial, sans-serif; color:#666666;  }
+h4.modcom5_title { margin:0 0 2px 0; padding:0; font:bold 14px/18px "Open Sans", Helvetica, arial, sans-serif; color:#272727; text-decoration:none; }
+h4.modcom5_title a, h4.modcom5_title a:visited, h4.modcom5_title a:hover {
+	margin:0; padding:0; display:block; text-decoration: none; border:none; outline:none; white-space:nowrap; overflow: hidden; text-overflow: ellipsis;
+	font:bold 14px/18px "Open Sans", Helvetica, arial, sans-serif; color:#272727;
+}
+h4.modcom5_title a:hover { color:#3C8ED4; }
+.modcom5_head { margin:0 0 2px 0; padding:0;  }
+.modcom5_avatar { margin:0; padding:0; width:34px; float:left; text-align:center; box-sizing: border-box; }
+.modcom5_avatar img { width:34px; height:34px; border:none; }
+.modcom5_authdate { margin:0 0 0 40px; padding:0; width:100%; box-sizing: border-box; }
+.modcom5_date { margin:0 0 2px 0; padding:0; font:normal 13px/16px tahoma, arial, sans-serif; color:#666666; }
+.modcom5_author { margin:0; padding:0; font:normal 13px/16px tahoma, arial, sans-serif; color:#888888; }
+.modcom5_author span { color:#666666; }
+.modcom5_authdate:after { content:''; display:table; clear:both; }
+div.modcom5_comment { margin:0; padding:0; font:normal 13px/16px tahoma, verdana, serif; color:#444444; }
+a.modcom5_comment, a.modcom5_comment:visited, a.modcom5_comment:hover {
+	text-decoration: none; border:none; outline:none; font:normal 13px/16px tahoma, verdana, serif; color:#444444;
+}
+a.modcom5_comment:hover { text-decoration: underline; }

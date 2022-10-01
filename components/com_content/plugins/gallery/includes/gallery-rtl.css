@@ -1,0 +1,36 @@
+/* plugin gallery */
+p.galhelp {	margin:0 0 20px 0; padding:0; font:normal 14px/17px arial, helvetica, sans-serif; color:#272727; }
+table.plug_gallery { margin:0; padding:0; border:none; width:100%; background:none; }
+table.plug_gallery tr { margin:0 0 4px 0; padding:0; border:none; }
+table.plug_gallery td {
+	margin:0; padding:4px; border:none; border-bottom:1px dashed #AAAAAA; background:#FFFFFF; vertical-align:top; 
+	font:normal 14px/18px tahoma, arial, sans-serif; color:#272727;
+}
+table.plug_gallery tr:hover td { background-color:#F2F2F2; }
+table.plug_gallery td:first-child { width:90px; }
+table.plug_gallery td:nth-child(2) { width:90px; }
+table.plug_gallery td img { margin:0; padding:0; border:none; width:auto; max-width:80px; height:40px; }
+table.plug_gallery td a.plug_gallery_addcap { margin:0; padding:0; border:none; text-decoration:none; color:#888888; display:block; font-size:14px; line-height:18px; }
+table.plug_gallery td a.plug_gallery_addcap:hover { text-decoration:none; color:#333333; }
+table.plug_gallery td a.plug_gallery_editcap { margin:0; padding:0; border:none; text-decoration:none; color:#4A92D5; display:block; font-size:14px; line-height:18px; }
+table.plug_gallery td a.plug_gallery_editcap:hover { text-decoration:none; color:#000000; }
+table.plug_gallery td a.plug_gallery_delete { margin:4px 0 0 0; padding:0; border:none; text-decoration:none; color:#FF6600; display:block; font-size:14px; line-height:18px; }
+table.plug_gallery td a.plug_gallery_delete:hover { text-decoration:none; color:#FF0000; }
+.plug_gallery_note { font:normal 13px/18px tahoma, arial, sans-serif; color:#666666; }
+/* frontend */
+section.plugal_gallery { display:flex; flex-wrap: wrap; width:100%; margin:0 0 20px 0; padding:0 4px; box-sizing: border-box; }
+.plugal_column { flex: 33%; max-width: 33%; padding: 0 4px; box-sizing: border-box; }
+.plugal_column4 { flex: 25%; max-width: 25%; padding: 0 4px; box-sizing: border-box; }
+figure.plugal_item { margin:8px 0 0 0; padding:0; display:block; width:100%; vertical-align: middle; }
+figure.plugal_item img { margin:0; padding:0; border:none; width:100%; height:auto; }
+figure.plugal_item figcaption { display:block; margin:2px 0 0 0; padding:0; font:normal 14px/17px arial, helvetica, sans-serif; color:#666; text-align:center; }
+
+@media screen and (max-width: 850px) {
+	.plugal_column4 { flex: 33%; max-width: 33%; }
+}
+@media screen and (max-width: 800px) {
+	.plugal_column, .plugal_column4 { flex: 50%; max-width: 50%; }
+}
+@media screen and (max-width: 620px) {
+	.plugal_column, .plugal_column4 { flex: 100%; max-width: 100%; }
+}

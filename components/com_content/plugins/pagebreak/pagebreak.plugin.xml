@@ -1,0 +1,19 @@
+<package type="plugin">
+	<name>pagebreak</name>
+	<title>Page Break</title>
+	<created>2019-03-06 19:12:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2019 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[Splits an article in multiple pages]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+		<package type="component" version="2.x">content</package>
+	</dependencies>
+	<params />
+</package>

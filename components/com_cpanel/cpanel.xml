@@ -1,0 +1,18 @@
+<package type="component">
+	<name>com_cpanel</name>
+	<title>Control panel</title>
+	<created>2021-09-26 18:00:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>https://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2021 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>https://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.1</version>
+	<description><![CDATA[Elxis administration control panel]]></description>
+	<dependencies>
+		<package type="core" version="5.x">elxis</package>
+	</dependencies>
+	<params />
+</package>

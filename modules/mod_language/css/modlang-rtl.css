@@ -1,0 +1,141 @@
+/* module Language CSS */
+/* generic */
+.modulang { margin:0; padding:0; }
+.modulang > a { text-decoration:none; border:none; }
+.modulang > a.curlang { font-weight: bold; }
+.modulang > a > img { margin:0; padding:0; border:none; vertical-align:middle; }
+
+/* Style 0 - drop down */
+ul.langdrop { margin:0; padding:0; width:140px; height:26px; position:relative; z-index:10; list-style:none; border:1px solid #b0d4f9; display:inline-block; }
+ul.langdrop li { margin:0; padding:0 5px; position:relative; list-style:none; display:block; text-align:right; background:#4498ef; }
+ul.langdrop a, ul.langdrop a:visited, ul.langdrop a:active, ul.langdrop a:hover {
+  margin:0; padding:5px 5px 5px 5px; border:none; text-decoration:none; outline:none; display:block; font:bold 12px/16px arial, helvetica, sans-serif; color:#FFFFFF; white-space:nowrap;
+  transition:padding-right 0.3s ease-in, background-position 0.3s ease-in;
+}
+ul.langdrop > li > a { background:transparent url(menu-arrow.png) 0 0 no-repeat; }
+ul.langdrop:hover > li > a { background:transparent url(menu-arrow.png) 0 -26px no-repeat; }
+ul.langdrop a:hover { padding-right:15px; }
+ul.langdrop ul li:hover { background-color:#a0ccf9; }
+ul.langdrop img { margin:0; padding:0; border:none; vertical-align:bottom; }
+ul.langdrop ul {
+  display:none; margin:0; padding:0; width:140px; position:absolute; top:26px; right:-1px; overflow:hidden; border-right:1px solid #b0d4f9; border-left:1px solid #b0d4f9; border-bottom:1px solid #b0d4f9;
+}
+ul.langdrop li:hover ul { display:block; }
+/* black */
+ul.langblack { border-color:#000000; }
+ul.langblack li { background:#333333; }
+ul.langblack a, ul.langblack a:visited, .langblack a:active, .langblack a:hover { color:#FFFFFF; }
+ul.langblack ul li:hover { background-color:#555555; }
+ul.langblack ul { border-color:#000000; }
+/* gray */
+ul.langgray { border-color:#999999; }
+ul.langgray li { background:#D2D2D2; }
+ul.langgray a, ul.langgray a:visited, ul.langgray a:active, ul.langgray a:hover { color:#555555; }
+ul.langgray ul li:hover { background-color:#BBBBBB; }
+ul.langgray ul { border-color:#999999; }
+/* dark gray */
+ul.langdgray { border-color:#666666; }
+ul.langdgray li { background:#BBBBBB; }
+ul.langdgray a, ul.langdgray a:visited, ul.langdgray a:active, ul.langdgray a:hover { color:#444444; }
+ul.langdgray ul li:hover { background-color:#DDDDDD; }
+ul.langdgray ul { border-color:#666666; }
+/* gray rounded */
+ul.langrgray { border-color:#999999; }
+ul.langrgray li { background:#D2D2D2; }
+ul.langrgray > li { border-radius:6px; }
+ul.langrgray a, ul.langrgray a:visited, ul.langrgray a:active, ul.langrgray a:hover { color:#555555; }
+ul.langrgray ul li:hover { background-color:#BBBBBB; }
+ul.langrgray ul { border-color:#999999; }
+ul.langrgray > li:hover { background:#666666; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius:0; border-bottom-right-radius:0; }
+ul.langrgray > li:hover > a { color:#FFFFFF; }
+/* transparent gray */
+ul.langtgray { border:none; }
+ul.langtgray li { background:#D2D2D2; }
+ul.langtgray > li { background:transparent; }
+ul.langtgray a, ul.langtgray a:visited, ul.langtgray a:active, ul.langtgray a:hover { color:#FFFFFF; }
+ul.langtgray ul li:hover { background-color:#BBBBBB; }
+ul.langtgray ul { border:none; right:0; }
+ul.langtgray > li:hover { background:#999999; }
+ul.langtgray > li:hover > a { color:#FFFFFF; }
+/* green */
+ul.langgreen { border-color:#FFFFFF; }
+ul.langgreen li { background:#8ec449; }
+ul.langgreen a, ul.langgreen a:visited, ul.langgreen a:active, ul.langgreen a:hover { color:#FFFFFF; }
+ul.langgreen ul li:hover { background-color:#639f15; }
+ul.langgreen ul { border-color:#FFFFFF; }
+/* orange */
+ul.langorange { border-color:#FFFFFF; }
+ul.langorange li { background:#FF9900; }
+ul.langorange a, ul.langorange a:visited, ul.langorange a:active, ul.langorange a:hover { color:#FFFFFF; }
+ul.langorange ul li:hover { background-color:#FF6600; }
+ul.langorange ul { border-color:#FFFFFF; }
+/* yellow */
+ul.langyellow { border-color:#f3efc5; }
+ul.langyellow li { background:#dacd37; }
+ul.langyellow a, ul.langyellow a:visited, ul.langyellow a:active, ul.langyellow a:hover { color:#FFFFFF; }
+ul.langyellow ul li:hover { background-color:#555555; }
+ul.langyellow ul { border-color:#f3efc5; }
+/* purple */
+ul.langpurple { border-color:#FFFFFF; }
+ul.langpurple li { background:#a552eb; }
+ul.langpurple a, ul.langpurple a:visited, ul.langpurple a:active, ul.langpurple a:hover { color:#FFFFFF; }
+ul.langpurple ul li:hover { background-color:#8a2cd9; }
+ul.langpurple ul { border-color:#FFFFFF; }
+/* Style 5 - Flags slider towards left */
+.langslider { margin:0; padding:0; display:block; height:18px; position:relative; overflow:hidden; text-align:right; }
+.langslcur a, .langslmore a { margin:0; padding:0; border:none; outline:none; text-decoration:none; line-height:16px; }
+.langslcur img, .langslmore img { padding:1px; vertical-align:top; }
+.langslcur img:hover, .langslmore img:hover { padding:0; width:18px; height:18px; }
+.langslcur { margin:0; padding:0; position:relative; display:block; float:right; width:18px; z-index:3; text-align:center; }
+.langslmore {
+  margin:0; padding:0; width:500px; display:inline-block; position:absolute; top:0; right:-500px; text-align:left; z-index:2;
+  -moz-transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; transition:all 0.5s easy-out;
+}
+#langslider2:hover .langslmore { right:-460px; }
+#langslider3:hover .langslmore { right:-438px; }
+#langslider4:hover .langslmore { right:-416px; }
+#langslider5:hover .langslmore { right:-394px; }
+#langslider6:hover .langslmore { right:-372px; }
+#langslider7:hover .langslmore { right:-350px; }
+#langslider8:hover .langslmore { right:-328px; }
+#langslider9:hover .langslmore { right:-306px; }
+#langslider10:hover .langslmore { right:-284px; }
+#langslider11:hover .langslmore { right:-262px; }
+#langslider12:hover .langslmore { right:-240px; }
+#langslider13:hover .langslmore { right:-218px; }
+#langslider14:hover .langslmore { right:-196px; }
+#langslider15:hover .langslmore { right:-174px; }
+#langslider16:hover .langslmore { right:-152px; }
+#langslider17:hover .langslmore { right:-130px; }
+#langslider18:hover .langslmore { right:-108px; }
+#langslider19:hover .langslmore { right:-86px; }
+#langslider20:hover .langslmore { right:-64px; }
+/* Style 6 - Flags slider towards right */
+.langrslider { margin:0; padding:0; display:block; height:18px; position:relative; overflow:hidden; text-align:left; }
+.langrslcur a, .langrslmore a { margin:0; padding:0; border:none; outline:none; text-decoration:none; line-height:16px; }
+.langrslcur img, .langrslmore img { padding:1px; vertical-align:top; }
+.langrslcur img:hover, .langrslmore img:hover { padding:0; width:18px; height:18px; }
+.langrslcur { margin:0; padding:0; position:relative; display:block; float:left; width:18px; z-index:3; text-align:center; }
+.langrslmore {
+  margin:0; padding:0; width:500px; display:inline-block; position:absolute; top:0; left:-500px; text-align:right; z-index:2;
+  -moz-transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; transition:all 0.5s easy-out;
+}
+#langrslider2:hover .langrslmore { left:-460px; }
+#langrslider3:hover .langrslmore { left:-438px; }
+#langrslider4:hover .langrslmore { left:-416px; }
+#langrslider5:hover .langrslmore { left:-394px; }
+#langrslider6:hover .langrslmore { left:-372px; }
+#langrslider7:hover .langrslmore { left:-350px; }
+#langrslider8:hover .langrslmore { left:-328px; }
+#langrslider9:hover .langrslmore { left:-306px; }
+#langrslider10:hover .langrslmore { left:-284px; }
+#langrslider11:hover .langrslmore { left:-262px; }
+#langrslider12:hover .langrslmore { left:-240px; }
+#langrslider13:hover .langrslmore { left:-218px; }
+#langrslider14:hover .langrslmore { left:-196px; }
+#langrslider15:hover .langrslmore { left:-174px; }
+#langrslider16:hover .langrslmore { left:-152px; }
+#langrslider17:hover .langrslmore { left:-130px; }
+#langrslider18:hover .langrslmore { left:-108px; }
+#langrslider19:hover .langrslmore { left:-86px; }
+#langrslider20:hover .langrslmore { left:-64px; }

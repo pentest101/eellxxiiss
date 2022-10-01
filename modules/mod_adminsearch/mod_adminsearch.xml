@@ -1,0 +1,19 @@
+<package type="module" section="backend">
+	<name>mod_adminsearch</name>
+	<title>Administration search</title>
+	<created>2019-02-03 19:46:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2019 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>2.0</version>
+	<description><![CDATA[Displays a quick content search box in administration area.]]></description>
+	<dependencies>
+		<dependency type="core" version="5.x">elxis</dependency>
+		<dependency type="component" version="2.x">content</dependency>
+	</dependencies>
+	<params></params>
+</package>
